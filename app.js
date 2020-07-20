@@ -8,6 +8,8 @@ app.use(bodyParser.text());
 
 const excuses = { shopping: {morning: ["bags split on the way back" , 2, 3], afternoon: [1, 2, 3], evening: [1, 2 ,3]}, working: {morning: [1 , 2, 3], afternoon: [1, 2, 3], evening: [1, 2 ,3]}, kids: {morning: [1 , 2, 3], afternoon: [1, 2, 3], evening: [1, 2 ,3]}};
 
+app.use(express.static['client']);
+
 app.get('/', (req, res) => res.send('Need an excuse?'));
 
 app.get('/excuses/:action/:timing', (req, res) => {
