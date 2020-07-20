@@ -1,6 +1,8 @@
 const myForm = document.querySelector("#my-form");
+const excuseParagraph = document.querySelector("#excuse-para")
 
 myForm.addEventListener("submit", returnExcuse);
+
 
 function returnExcuse(e) {
   e.preventDefault();
@@ -16,5 +18,6 @@ function returnExcuse(e) {
 };
 
 function renderExcuse(excuse) {
-  myForm.insertAdjacentHTML('afterend', `<p>${excuse}</p>`);
+  excuseParagraph.textContent = excuse;
+  // myForm.insertAdjacentHTML('afterend', `<p>${excuse}</p>`);
 };
