@@ -9,3 +9,7 @@ We've got you covered!
 Generate an excuse that your significant other is bound to fall for in seconds.
 
 Built using JS, HTML, CSS and Express.
+
+### Contributors
+
+@albieduffy, @angus-woodman
