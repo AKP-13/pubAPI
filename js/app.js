@@ -14,4 +14,4 @@ app.get('/excuses/:action/:timing', (req, res) => {
     res.send(JSON.stringify(excuses[req.params.action][req.params.timing][Math.floor(Math.random()*3)]));
 });
 
-app.listen(process.env.PORT || 3000, () => console.log(`Express departing now from http://localhost:${port}`));
+app.listen(process.env.PORT || 3000, () => console.log(`Express departing now!`));
