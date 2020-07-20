@@ -16,6 +16,4 @@ app.get('/excuses/:action/:timing', (req, res) => {
     res.send(JSON.stringify(excuses[req.params.action][req.params.timing][Math.floor(Math.random()*3)]));
 });
 
-app.get('*', res.status(404).send('What??'));
-
 app.listen(port, () => console.log(`Express departing now from http://localhost:${port}`));
